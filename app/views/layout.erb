@@ -19,5 +19,10 @@
 </head>
 <body>
   <%= yield %>
+
+  <h2>Session Data</h2>
+  <div style="width: 50%;">
+  <%= session.inspect %>
+  </div>
 </body>
 </html>
