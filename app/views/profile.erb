@@ -1,0 +1,10 @@
+<h1>Welcome to your profile page <%=@user.name%></h1>
+
+<form action="/logout" method="post">
+  <input type="submit" value="Logout"/>
+</form>
+
+<h2>Session Data</h2>
+<div style="width: 50%;">
+<%= session.inspect %>
+</div>
